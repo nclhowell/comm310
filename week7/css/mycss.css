@@ -1,0 +1,44 @@
+/*This CSS code is here to help you visualize this activity. Please don't change this code.*/
+
+p:first-of-type a:after{
+    content: "This link won't open Google yet.";
+    display: inline-block;
+    color: red;
+    border: 1px solid red;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0px 5px;
+  }
+  
+  p:first-of-type a[href="http://google.com"]:after, p:first-of-type a[href="http://www.google.com"]:after, p:first-of-type a[href="https://www.google.com"]:after, p:first-of-type a[href="https://google.com"]:after, p:first-of-type a[href="http://google.com/"]:after, p:first-of-type a[href="http://www.google.com/"]:after, p:first-of-type a[href="https://www.google.com/"]:after, p:first-of-type a[href="https://google.com/"]:after{
+    content: "This link won't open in a new tab yet.";
+    display: inline-block;
+    color: red;
+    border: 1px solid red;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0px 5px;
+  }
+  
+  
+  p:first-of-type a[href="http://google.com"][target="_blank"]:after, p:first-of-type a[href="http://www.google.com"][target="_blank"]:after, p:first-of-type a[href="https://google.com"][target="_blank"]:after, p:first-of-type a[href="https://www.google.com"][target="_blank"]:after, p:first-of-type a[href="http://google.com/"][target="_blank"]:after, p:first-of-type a[href="http://www.google.com/"][target="_blank"]:after, p:first-of-type a[href="https://google.com/"][target="_blank"]:after, p:first-of-type a[href="https://www.google.com/"][target="_blank"]:after{
+    content: "This will link to Google, and open in a new tab.";
+    color: green;
+    border: 1px solid green;
+    font-weight: normal;
+  }
+  
+  
+  
+  
+  
+  ul>ul:before, ul>ol:before, ol>ol:before, ol>ul:before{
+    content: "Not nested correctly";
+    border: 1px solid red;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  
